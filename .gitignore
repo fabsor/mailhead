@@ -1,0 +1,7 @@
+__pycache__
+frontend/web
+node_modules
+*.swp
+files/*
+db.sqlite3
+
