@@ -4,4 +4,5 @@ node_modules
 *.swp
 files/*
 db.sqlite3
+mailhead/settings.py
 
