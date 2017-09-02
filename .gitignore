@@ -5,4 +5,5 @@ node_modules
 files/*
 db.sqlite3
 mailhead/settings.py
+.virtualenv
 
