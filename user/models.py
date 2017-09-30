@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from domains.models import Domain
+
 class UserManager(BaseUserManager):
     """
     User manager for handling email as username.
@@ -30,3 +31,5 @@ class User(AbstractUser):
     domain = models.ForeignKey(Domain)
     email = models.EmailField(_('Email address'), blank=False, unique=True)
     objects = UserManager()
+    quota = models.IntegerField(default=0)
+    active = models.BooleanField(default=True)
